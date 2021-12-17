@@ -3,7 +3,7 @@ info:
   title: "APIxEformidling"
   version: "1.0.0"
 paths: 
-  /capabilities:
+  /api/capabilities:
     get:
       summary: "Get capabilities"
       description: "The service is used to get capabilities for a receiver"
