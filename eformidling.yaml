@@ -28,6 +28,10 @@ paths:
     get:
       summary: "Pop incoming message"
       description: ""
+      parameters:
+      - name: messageId
+        in: path
+        required: true
       responses:
         "200":
           description: "Ok"
@@ -35,6 +39,10 @@ paths:
     delete:
       summary: "Delete incomig message"
       description: ""
+      parameters:
+      - name: messageId
+        in: path
+        required: true
       responses:
         "200":
           description: "Ok"
@@ -55,6 +63,10 @@ paths:
     get:
       summary: "Get outgoing message"
       description: ""
+      parameters:
+      - name: messageId
+        in: path
+        required: true
       responses:
         "200":
           description: "Ok"
@@ -99,6 +111,10 @@ paths:
     get:
       summary: "Get conversation by messageId"
       description: ""
+      parameters:
+      - name: messageId
+        in: path
+        required: true
       responses:
         "200":
           description: "Ok"
@@ -117,6 +133,10 @@ paths:
   /statuses/{messageId}:
     get:
       summary: "Find message statuses by messageId"
+      parameters:
+      - name: messageId
+        in: path
+        required: true
       responses:
         "200":
           description: "Ok"
@@ -145,6 +165,10 @@ paths:
   /subscriptions/{id}:
     post:
       summary: "Get a subscription"
+      parameters:
+      - name: id
+        in: path
+        required: true
       responses:
         "200":
           description: "Ok"
