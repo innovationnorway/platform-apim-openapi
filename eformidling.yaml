@@ -1,9 +1,9 @@
 openapi: 3.0.2
 info:
   title: "APIxEformidling"
-  version: "1.0.1"
+  version: "1.0.2"
 paths: 
-  /api/capabilities:
+  /capabilities:
     get:
       summary: "Get capabilities"
       description: "The service is used to get capabilities for a receiver"
