@@ -1,0 +1,85 @@
+openapi: 3.1.0
+info:
+  title: "APIxEformidling"
+  version: "1.0.0"
+paths: 
+  /capabilities:
+    get:
+      summary: "Get capabilities"
+      description: "The service is used to get capabilities for a receiver"
+  /messages/in:
+    get:
+      summary: "Find incoming messages"
+      description: "The service is used to search for incoming messages. The response is paged with a default page size of 10."
+  /messages/in/peek:
+    get:
+      summary: "Peek incoming message"
+      description: ""
+  /messages/in/pop/{messageId}:
+    get:
+      summary: "Pop incoming message"
+      description: ""
+  /messages/in/{messageId}:
+    delete:
+      summary: "Delete incomig message"
+      description: ""
+  /messages/out:
+    post:
+      summary: "Create message"
+      description: ""
+    get:
+      summary: "Find outgoing messages"
+      description: ""
+  /messages/out/{messageId}:
+    get:
+      summary: "Get outgoing message"
+      description: ""
+    put:
+      summary: "Upload attachment"
+      description: ""
+    delete:
+      summary: "Delete message"
+    post: 
+      summary: "Send message"
+      description: ""
+  /messages/out/multipart:
+    post:
+      summary: "Send multipart message"
+  /conversations:
+    get:
+      summary: "Find conversations"
+      description: ""
+  /conversations/{id}:
+    get:
+      summary: "Get conversation by Id"
+      description: ""
+  /conversations/messageId/{messageId}:
+    get:
+      summary: "Get conversation by messageId"
+      description: ""
+  /conversations/queue:
+    get:
+      summary: "Queued conversations"
+  /statuses:
+    get:
+      summary: "Get message statuses"
+  /statuses/{messageId}:
+    get:
+      summary: "Find message statuses by messageId"
+  /statuses/peek:
+    get:
+      summary: "Peek the lastest message status"
+  /subscriptions:
+    get:
+      summary: "Get subscriptions"
+    post: 
+      summary: "Create a subscription"
+    delete:
+      summary: "Delete all subscriptions"
+  /subscriptions/{id}:
+    post:
+      summary: "Get a subscription"
+    delete: 
+      summary: "Delete a subscription"
+    put:
+      summary: "Update a subscription"
