@@ -32,6 +32,8 @@ paths:
       - name: messageId
         in: path
         required: true
+        schema:
+            type: string
       responses:
         "200":
           description: "Ok"
@@ -43,6 +45,8 @@ paths:
       - name: messageId
         in: path
         required: true
+        schema:
+          type: string
       responses:
         "200":
           description: "Ok"
@@ -67,22 +71,42 @@ paths:
       - name: messageId
         in: path
         required: true
+        schema:
+            type: string
       responses:
         "200":
           description: "Ok"
     put:
       summary: "Upload attachment"
       description: ""
+      parameters:
+      - name: messageId
+        in: path
+        required: true
+        schema:
+            type: string
       responses:
         "200":
           description: "Ok"
     delete:
       summary: "Delete message"
+      parameters:
+      - name: messageId
+        in: path
+        required: true
+        schema:
+            type: string
       responses:
         "200":
           description: "Ok"
     post: 
       summary: "Send message"
+      parameters:
+      - name: messageId
+        in: path
+        required: true
+        schema:
+            type: string
       description: ""
       responses:
         "200":
@@ -104,6 +128,12 @@ paths:
     get:
       summary: "Get conversation by Id"
       description: ""
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+            type: string
       responses:
         "200":
           description: "Ok"
@@ -115,6 +145,8 @@ paths:
       - name: messageId
         in: path
         required: true
+        schema:
+            type: string
       responses:
         "200":
           description: "Ok"
@@ -137,6 +169,8 @@ paths:
       - name: messageId
         in: path
         required: true
+        schema:
+            type: string
       responses:
         "200":
           description: "Ok"
@@ -169,16 +203,30 @@ paths:
       - name: id
         in: path
         required: true
+        schema:
+            type: string
       responses:
         "200":
           description: "Ok"
     delete: 
       summary: "Delete a subscription"
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+            type: string
       responses:
         "200":
           description: "Ok"
     put:
       summary: "Update a subscription"
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+            type: string
       responses:
         "200":
           description: "Ok"
