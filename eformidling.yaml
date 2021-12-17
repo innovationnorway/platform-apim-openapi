@@ -230,3 +230,9 @@ paths:
       responses:
         "200":
           description: "Ok"
+  /manage/health:
+    get:
+      summary: "Returns status"
+      responses:
+        "200":
+          description: "Ok"
